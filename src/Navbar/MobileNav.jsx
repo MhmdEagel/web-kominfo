@@ -19,11 +19,17 @@ export default function MobileNav({ IsShowMobileNav, setIsShowMobileNav }) {
       >
         <FontAwesomeIcon icon={faXmarkCircle} />
       </div>
-      <div className="flex flex-col gap-4 text-slate-400">
-        <NavLink className={({isActive}) => isActive ? "isActive": null} to="/">Beranda</NavLink>
-        <NavLink className={({isActive}) => isActive ? "isActive": null} to="/profile">Profil</NavLink>
-        <NavLink className={({isActive}) => isActive ? "isActive": null} to="/login">Login</NavLink>
+      <div className="flex flex-col gap-4 text-slate-400 justify-start items-start">
+        <NavLink className={({isActive}) => isActive ? "navbar-item is-active": "navbar-item"} to="/">Beranda</NavLink>
+        <NavLink className={({isActive}) => isActive ? "navbar-item is-active": "navbar-item"} to="/profile">Profil</NavLink>
+        <NavLink
+        to="login"
+        className="rounded-lg border bg-blue-600 px-3 py-1 text-white"
+      >
+        Login
+      </NavLink>
       </div>
+      
     </div>
   );
 }

@@ -9,7 +9,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-800 pt-6 text-white">
+    <footer className="bg-blue-900 pt-6 text-white">
       <section className="sm:flex max-w-fit mx-auto items-center gap-6 md:gap-8 mb-5">
         <div className="mx-auto mb-4 w-fit">
           <img src="/logoPutih.png" className="sm:w-[150px]" width={120} alt="logo" />
@@ -35,8 +35,8 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <section className="border-t-2 border-slate-500 py-2  bg-blue-900 h-full">
-        <div className="w-fit mx-auto text-sm mt-4">
+      <section className="border-t-2 border-slate-500 py-4  bg-blue-900 h-full">
+        <div className="w-fit mx-auto text-sm">
             <p>&copy; 2023 Muhammad Eagel Triutama</p>
         </div>
       </section>

@@ -8,6 +8,7 @@ import "./index.css"
 import Layout from './Layout'
 import Home from './Pages/Home'
 import Profile from './Pages/Profile'
+import Login from './Pages/Login'
 
 createRoot(document.getElementById("root"))
 .render(
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root"))
             <Route index element={<Home />} />
             <Route path='profile' element={<Profile />} />
         </Route>
+        <Route path='login' element={<Login />} />
     </Routes>
     </BrowserRouter>
 )

@@ -33,7 +33,7 @@ export default function Service() {
         {services.map((service) => {
           return (
             <div className="w-fit" key={service.id}>
-              <div className="flex h-[100px] w-[100px] items-center justify-center rounded-full bg-blue-300 md:h-[130px] md:w-[130px]">
+              <div className="flex h-[100px] w-[100px] items-center justify-center rounded-full bg-blue-300 md:h-[130px] md:w-[130px] shadow-lg">
                 <img
                   src={service.img}
                   alt=""
